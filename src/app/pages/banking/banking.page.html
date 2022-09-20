@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>BANKING</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="main">
+  <ion-icon class="add" name="add"></ion-icon>
+<ion-item>
+  <h1>Cards</h1>
+</ion-item>
+<ion-item>
+  <ion-img class="bankingcard" src="assets\icon\assets-images-site-hp-assets-mastheads-consumer-cards-en-3-card-bofa_cshsigcm_v[1].png"></ion-img>
+</ion-item>
+  <ion-card>
+    <ion-card-content>
+     <div class="circal">
+      <ion-icon name="analytics"></ion-icon>
+     </div>
+     <div class="tabtext">
+     <h4 class="transactions">Transactions</h4>
+     <p>view all Transactions</p>
+     </div>
+     <ion-icon class="chevronIcon"  name="chevron-forward"></ion-icon>
+    </ion-card-content>
+  </ion-card>
+  <h1 class="quicktext">Quick Actions</h1>
+  <ion-card>
+    <ion-card-content>
+    <div class="circal">
+      <ion-icon name="eye"></ion-icon>
+    </div>
+    <div class="tabtext">
+      <h4 class="transactions">Show card details</h4>
+      <p>Hidden by default</p>
+      </div>
+      <ion-toggle color="dark" ></ion-toggle>  
+      
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="ioncard">
+    <ion-card-content >
+    <div class="circal">
+      <ion-icon name="sync-circle-outline"></ion-icon>
+    </div>
+    <div class="tabtext">
+      <h4 class="transactions">Manual sync</h4>
+      <p>sync card</p>
+      </div>
+       <ion-button >Sync now</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="ioncard">
+    <ion-card-content >
+    <div class="circal">
+      <ion-icon name="information"></ion-icon>
+    </div>
+    <div class="tabtext">
+      <h4 class="transactions">Details</h4>
+      <p>More info about this card</p>
+      </div>
+      <ion-icon class="chevronIcon"  name="chevron-forward"></ion-icon>
+    </ion-card-content>
+  </ion-card>
+  <ion-tabs>
+    <!-- Tab bar -->
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="account">
+        <ion-icon name="home"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="contact">
+        <ion-icon name="pie-chart-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="settings">
+        <ion-icon name="swap-horizontal"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="settings">
+        <ion-icon name="card"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

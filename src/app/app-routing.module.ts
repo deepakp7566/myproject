@@ -32,7 +32,15 @@ const routes: Routes = [
   {
     path: 'forgot-password',
     loadChildren: () => import('./pages/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+  },  {
+    path: 'restaurant',
+    loadChildren: () => import('./pages/restaurant/restaurant.module').then( m => m.RestaurantPageModule)
   },
+  {
+    path: 'banking',
+    loadChildren: () => import('./pages/banking/banking.module').then( m => m.BankingPageModule)
+  },
+
 ];
 
 @NgModule({

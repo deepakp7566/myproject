@@ -9,10 +9,15 @@ export class ForgotPasswordPage implements OnInit {
   constructor() {}
   email;
   usermail;
-
+  passwordnew
+  password;
+  isshow=false;
+  isPassChange=false
   // newPass;
 
   submit() {
+    const newpass=this.passwordnew
+
     // let newpassword = this.newPass;
     let getArray: any = [];
     getArray = localStorage.getItem('signup');
@@ -23,15 +28,28 @@ export class ForgotPasswordPage implements OnInit {
     for (let i = 0; i < getArray.length; i++) {
       let newmail = getArray[i].Email;
       if (this.usermail === newmail) {
-        let password = getArray[i].Password;
-        console.log('password', password);
-      } else {
+        this.password = getArray[i].Password;
+        getArray[i].password=this.passwordnew
+        console.log('password', this.password);
+        this.isPassChange=true
+      }
+       else {
         alert('details not match');
       }
       if (this.usermail) {
-        alert('your password is' + this.usermail);
+        alert('your password is' + this.password);
       }
+   
+      
     }
+    if(this.isPassChange){
+      localStorage.setItem('signUp',JSON.stringify(getArray))
+    }
+
+    this.isshow=true
+  }
+  create(){
+
   }
   ngOnInit() {}
 }

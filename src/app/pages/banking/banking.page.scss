@@ -1,0 +1,69 @@
+ion-header{
+    text-align: center;
+    ion-title{
+        font-weight: 700;
+    }
+}
+.main{
+    .add{
+        width: 20px;
+        height: 20px;
+        // position: absolute;
+        right: 0%;
+    }
+    .bankingcard{
+        width: 100%;
+        height: 200px;
+        
+    }
+    ion-card-content{
+        display: flex;
+        align-items: center;
+        .circal{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+       height: 30px;
+       width: 30px;
+       background-color: red;
+       border-radius: 20px;
+        }
+        .tabtext{
+            margin-left: 10px;
+        }
+        .transactions{
+            font-weight: 700;
+        }
+        .chevronIcon{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 10px;
+
+        }
+        ion-toggle{
+            position: absolute;
+            right: 10px;
+height: 20px;
+        }
+       
+    }
+    .quicktext{
+        margin-left: 10px;
+        font-weight: 900;
+    }
+    .ioncard{
+    margin-top: -9px !important;  
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;   
+    ion-button{
+        position: absolute;
+        right: 10px;
+    }    
+    }
+    ion-tabs{
+        margin-top: 119px;
+    }
+    
+}
